@@ -1,0 +1,44 @@
+city_inspections
+{
+	"_id" : ObjectId,
+    "id" : text,
+    "inspector": RefId
+	"certificate_number" : int,
+	"business_name" : text,
+	"date" : text,
+	"result" : text,
+	"sector" : text,
+	"address" : {
+		"city" : text,
+		"zip" : int,
+		"street" : text,
+		"number" : int
+	}
+}
+
+city_inspectors
+{
+    "_id" : ObjectId,
+    "employee_number" : int,
+    "first_name": text
+	"last_name" : text,
+	"phone_numbers" : [
+        {
+            "name": text,
+            "number": text
+        }
+    ],
+	"lisence_plate" : text,
+	"schedule" : [
+        {
+            "day": text,
+            "time": timestamp/text
+        }
+    ],
+	"address" : {
+		"city" : text,
+		"zip" : int,
+		"street" : text,
+		"number" : int
+	}
+}

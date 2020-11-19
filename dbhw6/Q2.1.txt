@@ -1,0 +1,4 @@
+MATCH (m:Movie)
+WHERE m.title =~ '^.*\([1-9]{4}\)\s*$'
+SET m.year = toInteger(substring(trim(m.title), size(trim(m.title))-5, 4))
+RETURN m
