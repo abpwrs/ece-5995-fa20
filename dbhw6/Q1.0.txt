@@ -1,5 +1,5 @@
 :auto USING PERIODIC COMMIT 500
-LOAD CSV WITH HEADERS FROM "file:///ml-25m/movies.csv"  AS row
+LOAD CSV WITH HEADERS FROM "file:///ml-latest-small/movies.csv"  AS row
 MERGE (m:Movie  {movieId: toInteger(row.movieId), title: row.title})
 WITH m, row
 UNWIND split(row.genres, '|')  AS genres

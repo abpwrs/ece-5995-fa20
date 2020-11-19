@@ -1,0 +1,11 @@
+find all nodes that have no genre
+
+MATCH (m:Movie)
+WHERE NOT (m)-[:IN_GENRE]->(:Genre)
+RETURN m
+
+MATCH (m:Movie)
+WHERE NOT (m)-[:IN_GENRE]->(:Genre)
+RETURN COUNT(m)
+
+

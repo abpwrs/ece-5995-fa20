@@ -1,0 +1,7 @@
+top five movies with the most reviews
+
+MATCH (m:Movie)<-[r:RATED]-(u:User)
+RETURN m.title, COUNT(r) as numReviews
+ORDER BY numReviews DESC
+LIMIT 5
+

@@ -1,4 +1,5 @@
+:auto USING PERIODIC COMMIT 500
 MATCH (m:Movie)
-WHERE m.title =~ '^.*\([1-9]{4}\)\s*$'
-SET m.year = toInteger(substring(trim(m.title), size(trim(m.title))-5, 4))
-RETURN m
+WHERE m.title =~ '.*\(\d{4}\).*'
+SET m.year = toInteger(substring(apoc.text.replace(m.title, '[^\d]', ''), size(apoc.text.replace(m.title, '[^\d]', ''))-4, 4))
+RETURN COUNT(m)

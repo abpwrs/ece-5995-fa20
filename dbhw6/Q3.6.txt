@@ -1,0 +1,4 @@
+The average rating for User 1 per genre
+
+MATCH (u:User {userId:1})-[r:RATED]->(m:Movie)-[:IN_GENRE]->(g:Genre)
+RETURN g.name, AVG(r.rating)

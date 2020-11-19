@@ -1,0 +1,3 @@
+MATCH (m:Movie)-[:IN_GENRE]->(g:Genre)
+RETURN g.name, count(m) as movieCount
+ORDER BY movieCount DESC

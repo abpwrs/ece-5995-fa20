@@ -1,0 +1,7 @@
+The top 10 highest rated movies (by average rating) and their genres.
+
+
+MATCH (g:Genre)<-[:IN_GENRE]-(m:Movie)<-[r:RATED]-(u:User)
+RETURN m.title, AVG(r.rating) as movieRating, collect(g.name)
+ORDER BY movieRating DESC
+LIMIT 10
