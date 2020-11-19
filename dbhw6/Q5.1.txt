@@ -1,0 +1,9 @@
+Get movie recommendations for user X by selecting the top 5 rated movies that X has not
+yet rated in the genre for which X has the highest preference. Start your query WITH 1 as X so it
+is easy to change the userId.
+
+
+MATCH (u:User {userId: 1})-[gp:GENRE_PREF]->(g:Genre)<-[ig:IN_GENRE]-(m:Movie)<-[r:RATED]-(:User)
+RETURN u, max(gp.preference) AS pref, g, AVG(r.rating) as movieRating, m
+ORDER BY pref DESC, movieRating DESC
+LIMIT 5
