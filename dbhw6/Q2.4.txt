@@ -1,6 +1,6 @@
 Get all the movies released in 2000 with the genres of Comedy or Romance and with title
 that starts with M (include the png of the resulting graph including movie and genre nodes).
 
-MATCH (m:Movie)
-WHERE m.year = 2000 AND (m.title STARTS WITH 'M') AND ((m)-[:IN_GENRE]-(:Genre {name: 'Comedy'}) OR (m)-[:IN_GENRE]-(:Genre {name:'Romance'}))
-RETURN n;
+MATCH   (m:Movie)
+WHERE   m.year = 2000 AND (m.title STARTS WITH 'M') AND ((m)-[:IN_GENRE]-(:Genre {name: 'Comedy'}) OR (m)-[:IN_GENRE]-(:Genre {name:'Romance'}))
+RETURN  m;

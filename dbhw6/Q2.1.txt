@@ -1,5 +1,5 @@
 :auto USING PERIODIC COMMIT 500
-MATCH (m:Movie)
-WHERE m.title =~ '.*\(\d{4}\).*'
-SET m.year = toInteger(substring(apoc.text.replace(m.title, '[^\d]', ''), size(apoc.text.replace(m.title, '[^\d]', ''))-4, 4))
-RETURN COUNT(m)
+MATCH   (m:Movie)
+WHERE   m.title =~ '.*\(\d{4}\).*'
+SET     m.year = toInteger(substring(apoc.text.replace(m.title, '[^\d]', ''), size(apoc.text.replace(m.title, '[^\d]', ''))-4, 4))
+RETURN  COUNT(m)

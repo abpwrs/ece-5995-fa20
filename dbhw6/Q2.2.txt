@@ -1,8 +1,8 @@
-MATCH (m:Movie)
-WHERE m.year IS NULL
-RETURN m
+MATCH   (m:Movie)
+WHERE   m.year IS NULL
+RETURN  m
 
 
-MATCH (m:Movie)
-WHERE m.year IS NULL
-RETURN count(m)
+MATCH   (m:Movie)
+WHERE   m.year IS NULL
+RETURN  count(m)
