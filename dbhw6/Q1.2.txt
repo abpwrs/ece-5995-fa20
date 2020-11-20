@@ -1,8 +1,8 @@
 :auto USING PERIODIC COMMIT 500
-LOAD CSV WITH HEADERS FROM "file:///ml-latest-small/ratings.csv"  AS row
-MERGE (u:User  {userId: toInteger(row.userId)})
-WITH u, row
-MATCH (m:Movie {movieId: toInteger(row.movieId)})
-MERGE (u)-[r:RATED {rating: toInteger(row.rating), timestamp: row.timestamp} ]->(m)
+LOAD    CSV WITH HEADERS FROM "file:///ml-latest-small/ratings.csv"  AS row
+MERGE   (u:User  {userId: toInteger(row.userId)})
+WITH    u, row
+MATCH   (m:Movie {movieId: toInteger(row.movieId)})
+MERGE   (u)-[r:RATED {rating: toInteger(row.rating), timestamp: row.timestamp} ]->(m)
 
 

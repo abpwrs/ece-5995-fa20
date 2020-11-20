@@ -1,4 +1,4 @@
 Find all the movies that User 3 has rated.
 
-MATCH (m:Movie)<-[r:RATED]-(u:User {userId: 3})
-RETURN COLLECT(m.title)
+MATCH   (m:Movie)<-[r:RATED]-(u:User {userId: 3})
+RETURN  COLLECT(m.title)

@@ -1,6 +1,6 @@
 10 most similar useres to user one
 
-MATCH (u:User {userId:1})-[s:SIMILARITY]-(u2:User)
-RETURN u2.userId, s.similarity
-ORDER BY s.similarity DESC
-LIMIT 10
+MATCH       (u:User {userId:1})-[s:SIMILARITY]-(u2:User)
+RETURN      u2.userId, s.similarity
+ORDER BY    s.similarity DESC
+LIMIT       10

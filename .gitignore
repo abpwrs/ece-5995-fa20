@@ -1,0 +1,41 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/microsoftoffice,libreoffice,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=microsoftoffice,libreoffice,visualstudiocode
+
+### LibreOffice ###
+# LibreOffice locks
+.~lock.*#
+
+### MicrosoftOffice ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/microsoftoffice,libreoffice,visualstudiocode

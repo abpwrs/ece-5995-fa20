@@ -2,7 +2,7 @@ Update the graph to add a relation labeled genre_pref between users and genres n
 a preference property computed to be the average rating for the movies in that genre the user has
 rated (do not add a relationship if the user has not rated any movies in the genre).
 
-MATCH (u:User)-[r:RATED]->(:Movie)-[:IN_GENRE]->(g:Genre)
-WITH u, g, AVG(r.rating) AS avgRating
-MERGE (u)-[p:GENRE_PREF]->(g)
-SET p.preference = avgRating
+MATCH   (u:User)-[r:RATED]->(:Movie)-[:IN_GENRE]->(g:Genre)
+WITH    u, g, AVG(r.rating) AS avgRating
+MERGE   (u)-[p:GENRE_PREF]->(g)
+SET     p.preference = avgRating

@@ -1,11 +1,11 @@
-MATCH (m:Movie) 
-WITH MIN(m.year) as old, MAX(m.year) as new
-UNWIND range(old, new, 10) as startDecade
-WITH startDecade, startDecade + 9 as endDecade
-MATCH (movie:Movie)
-WHERE movie.year >= startDecade and movie.year <= endDecade
-RETURN startDecade + "-" + endDecade as years, count(movie)
-ORDER BY years
+MATCH   (m:Movie) 
+WITH    MIN(m.year) as old, MAX(m.year) as new
+UNWIND  range(old, new, 10) as startDecade
+WITH    startDecade, startDecade + 9 as endDecade
+MATCH   (movie:Movie)
+WHERE   movie.year >= startDecade and movie.year <= endDecade
+RETURN  startDecade + "-" + endDecade as years, count(movie)
+ORDER   BY years
 
 
 
