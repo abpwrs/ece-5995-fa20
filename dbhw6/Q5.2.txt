@@ -1,4 +1,4 @@
- MATCH    (b:User)-[r:RATED]->(m:Movie), (b)-[s:SIMILARITY]-(a:User {userId:0})
+MATCH    (b:User)-[r:RATED]->(m:Movie), (b)-[s:SIMILARITY]-(a:User {userId:0})
 WHERE    NOT((a)-[:RATED]->(m))
 WITH     m, s.similarity AS similarity, r.rating AS rating
 ORDER BY m.name, similarity DESC
