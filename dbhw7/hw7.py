@@ -3,8 +3,6 @@ from statistics import mean
 
 from neo4j import GraphDatabase
 
-from transactions import *
-
 # NOTE: you need to create a full text search index before we can query for keywords
 # CALL db.index.fulltext.createNodeIndex("movieTextIndex",["Movie"],["title", "year"])
 

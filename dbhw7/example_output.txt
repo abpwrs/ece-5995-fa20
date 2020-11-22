@@ -1,0 +1,377 @@
+╭─alexander@alexanders-mbp.lan ~/projects/ece-5995-fa20/dbhw7  ‹master*› 
+╰─➤  python hw7.py 
+#################################
+Please enter your user_id (1-600)
+#################################
+=> 200
+
+#######################
+Please enter a username
+#######################
+=> Judy
+
+WELCOME, Judy (userId:200)!
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> search
+
+#####################################################
+Please enter keywords to search for (space separated)
+#####################################################
+=> full metal jacket
+
+Title:		Full Metal Jacket (1987)
+Genres:		Drama, War
+Score:		10.796
+Rating:		3.980
+
+Title:		Jacket, The (2005)
+Genres:		Thriller, Sci-Fi, Drama, Mystery
+Score:		4.291
+Rating:		2.750
+
+Title:		Heavy Metal (1981)
+Genres:		Horror, Action, Adventure, Sci-Fi, Animation
+Score:		3.882
+Rating:		3.485
+
+Title:		Heavy Metal 2000 (2000)
+Genres:		Adventure, Sci-Fi, Animation, Fantasy, Action
+Score:		3.502
+Rating:		2.000
+
+Title:		Paid in Full (2002)
+Genres:		Drama, Action
+Score:		3.424
+Rating:		4.000
+
+Title:		Full Monty, The (1997)
+Genres:		Comedy, Drama
+Score:		3.424
+Rating:		3.661
+
+Title:		Metal: A Headbanger's Journey (2005)
+Genres:		Documentary
+Score:		3.190
+Rating:		3.500
+
+Title:		Charlie's Angels: Full Throttle (2003)
+Genres:		Comedy, Thriller, Action, Crime, Adventure
+Score:		3.118
+Rating:		2.074
+Your Rating:	3.000
+
+Title:		Full Moon in Blue Water (1988)
+Genres:		Drama
+Score:		2.863
+Rating:		2.000
+
+Title:		Maria Full of Grace (Maria, Llena eres de gracia) (2004)
+Genres:		Drama, Crime
+Score:		2.157
+Rating:		3.875
+
+Title:		Decline of Western Civilization Part II: The Metal Years, The (1988)
+Genres:		Documentary
+Score:		2.078
+Rating:		3.000
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> search
+
+#####################################################
+Please enter keywords to search for (space separated)
+#####################################################
+=> happy feet
+
+Title:		Happy Feet (2006)
+Genres:		Adventure, Animation, Comedy, IMAX, Children
+Score:		7.401
+Rating:		2.364
+
+Title:		Happy Feet Two (2011)
+Genres:		Animation, IMAX, Children, Comedy
+Score:		6.677
+Rating:		5.000
+
+Title:		20 Feet from Stardom (Twenty Feet from Stardom) (2013)
+Genres:		Documentary
+Score:		3.674
+Rating:		4.000
+
+Title:		Happy Gilmore (1996)
+Genres:		Comedy
+Score:		3.416
+Rating:		3.303
+Your Rating:	4.000
+
+Title:		Happy Accidents (2000)
+Genres:		Sci-Fi, Romance
+Score:		3.416
+Rating:		3.750
+
+Title:		Happy Endings (2005)
+Genres:		Drama, Comedy
+Score:		3.416
+Rating:		3.000
+
+Title:		Happy, Texas (1999)
+Genres:		Comedy
+Score:		3.416
+Rating:		4.000
+
+Title:		Happy Go Lovely (1951)
+Genres:		Musical
+Score:		3.081
+Rating:		4.000
+
+Title:		Happy-Go-Lucky (2008)
+Genres:		Comedy, Drama
+Score:		3.081
+Rating:		3.000
+
+Title:		Those Happy Days (2006)
+Genres:		Comedy, Children
+Score:		3.081
+Rating:		3.000
+
+Title:		Hot Lead and Cold Feet (1978)
+Genres:		Comedy, Western, Action
+Score:		3.007
+Rating:		3.000
+
+Title:		Bo Burnham: Make Happy (2016)
+Genres:		Comedy
+Score:		2.807
+Rating:		2.000
+
+Title:		Happy Birthday to Me (1981)
+Genres:		Mystery, Horror
+Score:		2.807
+Rating:		2.000
+
+Title:		Happy People: A Year in the Taiga (2010)
+Genres:		Documentary
+Score:		2.215
+Rating:		4.000
+
+Title:		Happy Together (a.k.a. Buenos Aires Affair) (Chun gwong cha sit) (1997)
+Genres:		Romance, Drama
+Score:		1.829
+Rating:		4.500
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> recommendation
+
+Title:		Long Goodbye, The (1973)
+ID:		2511
+Rating:		4.667
+N Ratings:	6
+
+Title:		Rififi (Du rififi chez les hommes) (1955)
+ID:		4298
+Rating:		4.500
+N Ratings:	6
+
+Title:		Laura (1944)
+ID:		942
+Rating:		4.429
+N Ratings:	21
+
+Title:		Double Indemnity (1944)
+ID:		3435
+Rating:		4.222
+N Ratings:	54
+
+Title:		Notorious (1946)
+ID:		930
+Rating:		4.200
+N Ratings:	60
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> rate
+
+#######################
+Enter a movidId to rate
+#######################
+=> 942
+
+####################################
+What is your rating for movie (942)?
+
+Options:
+> 1
+> 2
+> 3
+> 4
+> 5
+
+####################################
+=> 5
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> search
+
+#####################################################
+Please enter keywords to search for (space separated)
+#####################################################
+=> laura
+
+Title:		Laura (1944)
+Genres:		Mystery, Film-Noir, Crime
+Score:		4.813
+Rating:		4.500
+Your Rating:	5.000
+
+Title:		Eyes of Laura Mars (1978)
+Genres:		Thriller, Mystery
+Score:		3.526
+Rating:		3.500
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> recommendation
+
+Title:		Long Goodbye, The (1973)
+ID:		2511
+Rating:		4.667
+N Ratings:	6
+
+Title:		Rififi (Du rififi chez les hommes) (1955)
+ID:		4298
+Rating:		4.500
+N Ratings:	6
+
+Title:		Double Indemnity (1944)
+ID:		3435
+Rating:		4.222
+N Ratings:	54
+
+Title:		Notorious (1946)
+ID:		930
+Rating:		4.200
+N Ratings:	60
+
+Title:		Third Man, The (1949)
+ID:		1212
+Rating:		4.125
+N Ratings:	72
+
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> exit
+
+Goodbye!
+╭─alexander@alexanders-mbp.lan ~/projects/ece-5995-fa20/dbhw7  ‹master*› 
+╰─➤  python hw7.py
+#################################
+Please enter your user_id (1-600)
+#################################
+=> 200
+
+WELCOME, Judy (userId:200)!
+#########################################################
+MAIN MENU:
+exit - will exit this program
+search - will perform a keyword search for movies
+recommendation - will give you your top 5 recommendations
+rate - will allow you to rate a new movie
+
+Options:
+> exit
+> search
+> recommendation
+> rate
+
+#########################################################
+=> exit
+
+Goodbye!
